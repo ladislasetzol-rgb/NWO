@@ -1,0 +1,35 @@
+{
+  "name": "ask_question",
+  "arguments": {
+    "questions": [
+      {
+        "question": "Which interface does Pluto use?",
+        "options": [
+          "(Recommended) Pluto provides a REST API endpoint (e.g., http://pluto.local/api) for controlling the hardware.",
+          "Pluto is accessed via a Python library (e.g., `import pluto` with functions like `pluto.stabilize(comm_params)`).",
+          "Pluto uses a command‑line interface where commands are sent via `pluto.exe` with arguments."
+        ]
+      },
+      {
+        "question": "Where should the new stabilisation script be placed?",
+        "options": [
+          "(Recommended) In the `sovereign-physics-api` directory as `pluto_stabilizer.py`.",
+          "In a new top‑level `pluto` directory.",
+          "As part of an existing script like `simulation.py`."
+        ]
+      },
+      {
+        "question": "Select the actions the script must perform (you may choose multiple).",
+        "IsMultiSelect": true,
+        "options": [
+          "(Recommended) Adjust magnetic field intensity.",
+          "Calibrate high‑IQ signal alignment.",
+          "Monitor and log telemetry.",
+          "Enable continuous feedback loop."
+        ]
+      }
+    ],
+    "toolAction": "Clarifying Pluto integration",
+    "toolSummary": "Request details"
+  }
+}
